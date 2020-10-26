@@ -129,7 +129,6 @@ FROM
 println("Model "+ outputMD+ " has the following code\n"+sqltext1+sqltext2+outputRS)
 println("\nCreating model " + outputMD)
 spark.sqlContext.runDMLQuery(sqltext1+sqltext2+outputRS)
-
 println("\n Evaluating results for model " +  outputMD + " with the following code\n" + "CREATE OR REPLACE VIEW "+outputML +"` AS SELECT * FROM ML.EVALUATE(MODEL `"+projectId+"."+outputMD+"`, (SELECT DayNumber,AverageForDayOfWeekInKg,StandardDeviation,sampleSizeInDays FROM `"+ projectId+"."+outputRS + "`))")
 
 sqltext = "CREATE OR REPLACE VIEW "+outputML+" AS SELECT * FROM ML.EVALUATE(MODEL `"+projectId+"."+outputMD+"`, (SELECT DayNumber,AverageForDayOfWeekInKg,StandardDeviation,sampleSizeInDays FROM `"+ projectId+"."+outputRS + "`))"
