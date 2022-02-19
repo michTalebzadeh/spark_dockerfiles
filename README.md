@@ -16,7 +16,7 @@ REPOSITORY                             TAG                                      
 spark/spark-py                         3.1.1-scala_2.12-8-jre-slim-buster                     f74d60205fe9   31 minutes ago   952MB
 spark/spark                            3.1.1-scala_2.12-8-jre-slim-buster                     4d903c6cf0de   2 months ago     599MB
 
-The tarred ang gzipped dockerfiles are created as below
+The tarred and gzipped dockerfiles are created as below
 
  docker save spark/spark-py:3.1.1-scala_2.12-8-jre-slim-buster|gzip > spark-spark-py_3.1.1-scala_2.12-8-jre-slim-buster.tar.gz
  docker save spark/spark:3.1.1-scala_2.12-8-jre-slim-buster | gzip > spark-spark_3.1.1-scala_2.12-8-jre-slim-buster.tar.gz
