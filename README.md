@@ -18,7 +18,7 @@ spark/spark                            3.1.1-scala_2.12-8-jre-slim-buster       
 
 The tarred and gzipped dockerfiles are created as below
 
- docker save spark/spark-py:3.1.1-scala_2.12-8-jre-slim-buster|gzip > spark-spark-py_3.1.1-scala_2.12-8-jre-slim-buster.tar.gz
+ docker save spark/spark-py:3.1.1-scala_2.12-8-jre-slim-buster | gzip > spark-spark-py_3.1.1-scala_2.12-8-jre-slim-buster.tar.gz
  docker save spark/spark:3.1.1-scala_2.12-8-jre-slim-buster | gzip > spark-spark_3.1.1-scala_2.12-8-jre-slim-buster.tar.gz
 
 Just download them gunzip and untar them, so you would have it
